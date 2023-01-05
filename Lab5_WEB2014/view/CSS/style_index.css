@@ -1,0 +1,358 @@
+*{
+margin: 0;
+padding: 0;
+text-decoration: none;
+list-style: none;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+}
+/* ---------------------------------------------------- */
+header{
+height: 100px;
+width: 100%;
+background-color:  #fff;
+display: flex;
+justify-content: space-between;
+}
+.box1{
+margin-left: 150px;
+}
+.box2{
+display: flex;
+line-height: 100px;
+margin-right: 100px;
+color: #ccc;
+}
+.heart:hover, .cart:hover, .user:hover{
+    color: #dd2828;
+}
+.heart, .cart{
+margin-right: 30px;
+}
+.drop-down{
+display: none;
+position: absolute;
+width: 160px;
+}
+.drop-down li{
+list-style: none;
+border-bottom: 1px solid white;
+}
+.drop-down a{
+text-decoration: none;
+font-size: 15px;
+z-index: 1;
+display: block;
+padding: 12px 16px;
+color: #ffffff;
+}
+.drop-down a:hover{
+color: red;
+background-color: black;
+display: block;
+}
+.fa-user:hover .drop-down{
+background-color: #18a4dd;
+display: block;
+}
+/* ---------------------------------------------------- */
+nav{
+min-height: 50px;
+width: 100%;
+overflow: hidden;
+background-color: #e94342;   /*ffc82e*/
+display: flex;
+justify-content: space-between;
+}
+nav ul{
+margin-right: auto;
+}
+nav li{
+display: inline-block;
+line-height: 50px;
+}
+nav a{
+font-size: 15px;
+padding: 0 30px;
+line-height: 50px;
+color: #ffffff;
+display: block;
+margin-left: -5px;
+}
+nav a:hover,
+nav a.active{
+transition: 0.5s;
+background-color: #dd2828;
+color: #fff;
+}
+nav .search-container{
+line-height: 45px;
+padding-right: 50px;
+}
+nav input{
+border: none;
+outline: none;
+padding-left: 5px;
+width: 250px;
+height: 30px;
+font-size: 15px;
+border-radius: 5px 0 0 5px;
+}
+nav button{
+width: 35px;
+height: 30px;
+font-size: 15px;
+border: none;
+background-color:#fbbf22 ;
+color: #0c0c0c;
+margin-left: -6px;
+border-radius: 0 5px 5px 0;
+cursor: pointer;
+}
+/* ---------------------------------------------------- */
+.slideshow-container {
+position: relative;
+margin: auto;
+}
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+.mySlides img{
+width: 100%;
+height: 400px;
+}
+.dot {
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+}
+.nutt{
+margin-top: -35px;
+position: relative;
+}
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+.active {
+background-color: red;
+}
+/* ------------------------------------------------ */
+.box-layout{
+    display: flex; 
+    flex-wrap: wrap;
+    width: 100%;
+}
+.box-1{
+    flex: 1;
+}
+.box-2{
+    flex: 1;
+}
+.box-main{
+    flex: 4;
+    width: 100%;
+}
+/* banner sale */
+.bns img{
+    width: calc(100% - 5px);
+}
+/* style cho mục sản phẩm */
+.boxsp{
+    width: calc(25% - 5px);
+    height: 380px;
+    float: left;
+    border: 1px solid gray;
+    border-radius: 6px;
+    margin: 20px 5px 20px 0;
+    background-color: #ffffff;
+}
+.boxsp:hover{
+    border: 1px solid #dd1111;
+    transition: 0.2s;
+}
+.list-item h1{
+    text-align: center;
+    margin-top: 20px;
+    background-color: #dd2828;
+    color: #fff;
+    height: 35px;
+    /* border-radius: 10px; */
+    line-height: 35px;
+    width: calc(100% - 5px);
+}
+.list-item .boxsp img{
+    width: 90%;
+    margin-left: 5%;
+    height: 180px;
+    margin-top: 5%;
+    border-radius: 6px;
+}
+.boxsp img:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+.name{
+    font-size: 16px;
+    font-weight: 100;
+    color: #212529;
+    margin-top: 15px;
+    text-align: center;
+}
+.price{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #dd2828;
+    margin-top: 15px;
+}
+/* nút đặt hàng */
+.slsp{
+    width: 50px;
+    margin-top: 12%;
+    border-radius: 5px;
+    margin-left: 5%;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 15px;
+}
+.slnum{
+    font-size: 15px;
+    margin-left: 5%;
+}
+.btn{
+    width: 90%;
+    height: 40px;
+    margin-left: 5%;
+    border-radius: 10px;
+    border: none;
+    background-color: #fbbf22;
+    color: #fff;
+    margin-top: 10px;
+}
+.btn:hover{
+    background-color: #e94342;
+    transition: 0.5s;
+}
+/* ------------------------------------------------ */
+.as-container{
+    display: flex;
+    justify-content: space-between;
+}
+.as-box1{
+    flex: 1;
+    background-color: #fbbf22;
+}
+.as-box2{
+    flex: 1;
+    background-color: aqua;
+}
+.as-boxmain{
+    flex: 2;
+    margin-bottom: 20px;
+}
+.as-boxmain h2{
+    margin: 10px 0 5px 15px;
+}
+.as-new h5, .as-new i{
+    font-size: 15px;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+.as-content{
+    text-align: left;
+}
+.as-content span{
+    font-size: 12px;
+}
+.as-link a{
+    font-size: 14px;
+    font-style: italic;
+    float: right;
+    padding-right: 20px;
+    color: #333333;
+    margin-top: 10px;
+}
+.as-link a:hover{
+    color: #dd1111;
+}
+.as-new{
+    width: 30%;
+    border: 1px solid #bbb;
+    margin-left: 2.5%;
+    float: left;
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 450px;
+    text-align: center;
+    background-color: #ffffff;
+}
+.as-new img{
+    width: 90%;
+    height: 250px;
+    margin-top: 10px;
+}
+/* ------------------------------------------------ */
+footer{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: #292929;
+}
+.about{
+    margin-left: 20px;
+}
+.partner{
+    display: flex;
+    flex-direction: column;
+}
+.contact{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+footer li a{
+    color: #ffffff;
+    margin-top: 20px;
+}
+footer li a:hover{
+    color: #fbbf22;
+}
+h3{
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 22px;
+}
+.contact .social a span{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.about li a,
+.link li a{
+    font-size: 18px;
+}
+.fa-facebook{color: blue;}
+.fa-instagram{color: orangered;}
+.fa-google-plus{color: #dd1111;}
+.fa-twitter{color: steelblue;}
+/*  */
+.topnav .icon {
+    display: none;
+}
